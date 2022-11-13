@@ -1,0 +1,177 @@
+.order {
+    position: relative;
+    padding: 20px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-money {
+    width: 15px;
+    height: 15px;
+}
+
+.intro-product {
+    height: 80px;
+    width: 80px;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-order {
+    position: relative;
+    cursor: pointer;
+}
+
+.header-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(231, 225, 225);
+}
+
+.hedaer-order-left,
+.hedaer-order-right {
+    display: flex;
+    align-items: center;
+}
+
+.hedaer-order-left p {
+    padding: 0.5px 1px;
+    background: rgb(238, 77, 45);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.hedaer-order-left span {
+    margin-left: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.hedaer-order-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hedaer-order-right span {
+    margin-left: 3px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #26aa99;
+    
+}
+
+.order-stutus-order {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgb(238, 77, 45);
+    text-transform: uppercase;
+}
+
+.order-stutus-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.product-order {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(231, 225, 225);
+}
+
+.product-order-left {
+    display: flex;
+}
+
+.order-info {
+    position: relative;
+    margin-left: 20px;
+}
+
+.order-info .oder-infor-name{
+    margin: 0 0 3px;
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 48px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.order-info .oder-infor-name:hover{
+    color: rgb(159, 155, 155);
+}
+.order-info .oder-infor-id, 
+.order-info .oder-infor-number{
+    color: rgba(0,0,0,.54);
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 520;
+}
+.order-info .oder-infor-price{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.product-order-right{
+    color: rgb(238, 77, 45);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 520;
+}
+
+.footer-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-order .money-footer{
+    color: rgb(238, 77, 45);
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 550;
+}
+.footer-order .footer-infor{
+    font-size: 11px;
+    color: rgba(0,0,0,.54);
+}
+
+.footer-content{
+    font-size: 14px;
+}
+
+.footer-btn-buy{
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+}
+
+.footer-btn-buy a,.input-send{
+	cursor:pointer;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1.5px solid #6e6d6d;
+    color: #6e6d6d;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-btn-buy a:hover,.input-send:hover{
+    border: 1.5px solid rgb(238, 77, 45);
+    color: rgb(238, 77, 45);
+}

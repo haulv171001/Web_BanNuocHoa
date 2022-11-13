@@ -1,0 +1,253 @@
+
+body{
+    background-color: rgb(221, 220, 218);
+}
+.container-acount {
+	
+	font-family: 'Poppins', sans-serif;
+    max-height: 100vh;
+    padding: 20px 20px;
+}
+
+.container-acount .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container-acount .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #515f76, #04befe);
+    clip-path: circle(165px at 77% 23%);
+    transition: all .5s ease-in-out;
+}
+
+.container-acount .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container-acount .card .imgBx {
+    width: 280px;
+    height: 240px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-60%);
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.container-acount .card:hover .imgBx {
+    top: -10%;
+    transform: translateY(-10%);
+}
+
+.container-acount .card .imgBx .img-account {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 7rem;
+}
+
+.container-acount .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container-acount .card:hover .contentBx {
+    height: 240px;
+}
+
+.container-acount .card .contentBx .name-acount {
+    position: relative;
+    font-weight: 500;
+    color: #6e6d6d;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+.container-acount .card .contentBx .role-acount{
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #6e6d6d;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    transform: translateY(50px);
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.container-acount .card .contentBx .color,
+.container-acount .card .contentBx .size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    color: #fff;
+    opacity: 0;
+}
+
+.container-acount .card:hover .contentBx .size {
+    opacity: 1;
+    transition-delay: 0.6s;
+}
+
+.container-acount .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.8s;
+}
+
+.container-acount .card .contentBx .color h3,
+.container-acount .card .contentBx .size h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.container-acount .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container-acount .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-acount .card .contentBx .size span:hover {
+    background: #9bdc28;
+}
+
+.container-acount .card .contentBx .color span:nth-child(2) {
+    background: #9bdc28;
+    box-shadow: 0 0 10px #9bdc28, 0 0 15px #9bdc28, 0 0 30px #9bdc28;
+}
+
+.container-acount .card .contentBx .color span:nth-child(3) {
+    background: #03a9f4;
+    box-shadow: 0 0 10px #03a9f4, 0 0 15px #03a9f4, 0 0 30px #03a9f4;
+}
+
+.container-acount .card .contentBx .color span:nth-child(4) {
+    background: #e91e63;
+    box-shadow: 0 0 10px #e91e63, 0 0 15px #e91e63, 0 0 30px #e91e63;
+}
+
+.container-acount .card .contentBx a {
+    display: inline-block;
+    padding: 5px 13px;
+    background: transparent;
+    border: 2px solid #03a9f4;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container-acount .card:hover .contentBx a {
+    transform: translateY(60px);
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+.container-acount .card:hover .role-acount{
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.acount-container{
+    display: flex;
+}
+
+.acount-right{
+    padding: 20px;
+    width: 100%;
+}
+
+.acount-right-container{
+    background-color: #fff;
+    position: relative;
+    height: 390px;
+    border-radius: 8px;
+    padding: 30px 30px;
+}
+
+.acount-right-info p{
+    font-size: 0.95rem;
+}
+
+.acount-right-info span{
+    color: #03a9f4;
+    cursor: pointer;
+}
+
+.acount-left-function{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+
+.acount-left-function a{
+    text-decoration: none;
+    padding: 20px 15px;
+    border: 1.5px solid #6e6d6d;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #6e6d6d;
+    transition: all 0.3 ease-in-out;
+}
+
+.acount-left-function a .fa{
+    font-size: 1.5rem;
+}
+
+.acount-left-function a:hover{
+    border: 1.5px solid #03a9f4;
+    color: #03a9f4;
+}

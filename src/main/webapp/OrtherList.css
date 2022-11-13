@@ -1,0 +1,100 @@
+
+body {
+    background-color: rgba(255, 255, 255, 0.984);
+}
+
+.order-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background: linear-gradient(-45deg, #515f76, #04befe);
+}
+
+.order-list-content {
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.984);
+    border-radius:8px;
+}
+
+.table-shopping {
+    background: #fff;
+    padding: 10px 10px;
+    border-top: 1px solid rgb(224, 221, 221);
+    border-right: 1px solid rgb(244, 235, 235);
+    border-bottom: 1px solid rgb(243, 240, 240);
+    border-left: 1px solid rgb(243, 240, 240);
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.table-shopping:hover{
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%), -5px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.table-shopping .order-number{
+    width: 50px;
+}
+
+.table-shopping .order-date{
+    width: 150px;
+}
+.table-shopping .order-name{
+    width: 180px;
+}
+.table-shopping .order-address{
+    width: 200px;
+}
+.table-shopping .order-email{
+    width: 250px;
+}
+.table-shopping .order-amount{
+    width: 120px;
+}
+.table-shopping .order-add{
+    width: 100px;
+}
+.order-thead{
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: rgb(239, 147, 97);
+}
+
+.order-tbody{
+    font-size: 1rem;
+    font-weight: 520;
+    padding: 10px 0;
+}
+
+.order-number .number{
+    text-align: center;
+    padding: 7px 11px;
+    border-radius: 4px;
+    font-weight: 550;
+    color: rgb(239, 147, 97); 
+    border: 2px solid rgb(239, 147, 97);
+}
+.icon-order{
+    margin-right: 10px;
+    color: rgb(239, 147, 97);
+}
+
+.tbody-money{
+    color: rgb(245, 94, 94);
+}
+
+.add-tbody{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(222, 219, 219);
+    color: rgb(126, 123, 123);
+    transition: 0.3s ease-in-out;
+}
+
+.add-tbody:hover{
+    color: rgb(239, 147, 97); 
+    border: 2px solid rgb(239, 147, 97);
+}
